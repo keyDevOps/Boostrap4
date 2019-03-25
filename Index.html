@@ -11,12 +11,14 @@
     .container{
       margin-top: 50px;
       padding: 20px 0;
+      height: 700px;
       background-color:coral;
       display: flex;/* df */
       flex-direction: row;/* fxd:r */
       /* flex-wrap: nowrap; */
       /* flex-flow: row wrap; */
       justify-content: space-evenly;/* flex-end , center, space-between ,space-around,space-evenly */
+      align-items: center;
     }
 
     .item{
@@ -30,10 +32,17 @@
 /* Flex Item Properties */
     .item1{
       order:1;
+      /* flex-grow: 1; */
+      width: 200px;
     }
 
     .item5{
       order:-1;
+      /* align-self: flex-start; */
+      width: 200px;
+      /* flex-grow: 1; */
+      /* flex-shrink: 5; */
+      flex-basis: 100px;
     }
     </style>
   </head>
