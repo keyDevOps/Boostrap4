@@ -14,9 +14,9 @@
       background-color:coral;
       display: flex;/* df */
       flex-direction: row;/* fxd:r */
-      flex-wrap: nowrap;
+      /* flex-wrap: nowrap; */
       /* flex-flow: row wrap; */
-      justify-content: flex-start;/* flex-end , center, space-between ,space-around,space-evenly */
+      justify-content: space-evenly;/* flex-end , center, space-between ,space-around,space-evenly */
     }
 
     .item{
@@ -27,6 +27,14 @@
       font-size: 30px;/* fz30 */
       color: #ffffff;
     }
+/* Flex Item Properties */
+    .item1{
+      order:1;
+    }
+
+    .item5{
+      order:-1;
+    }
     </style>
   </head>
   <body>
@@ -35,7 +43,7 @@
      <div class="item item2">B</div>
      <div class="item item3">C</div>
      <div class="item item4">D</div>
-     <div class="item item4">E</div>
+     <div class="item item5">E</div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
